@@ -1,12 +1,110 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: {{projectTitle}}</title>
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="#">
+        <img src="/pics/logo.svg" alt="Логотип городка Седона">
+      </a>
+      <ul class="navigation">
+        <li><a href="#">Главная</a></li>
+        <li><a href="#">О Седоне</a></li>
+        <li><a href="#">Гостиницы</a></li>
+      </ul>
+      <ul class="user-navigation">
+        <li><a href="#"><img src="/pics/Поиск.png" alt="Поиск по сайту"></a></li>
+        <li><a href="#"><img src="/pics/Избранное.png" alt="Избранное"></a></li>
+        <li><button type="button">Хочу сюда!</button></li>
+      </ul>
+    </nav>
+  </header>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
+  <main>
+    <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
 
-  </body>
+    <section class="hero">
+      <p>Welcome to the gorgeous Sedona "Because the Grand Canyon sucks!"</p>
+      <h2>Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+      <p>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+    </section>
+
+    <section class="advantages">
+      <ul class="list-of-advantages">
+        <li>
+          <h3>Настоящий городок</h3>
+          <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+          <img src="/pics/photo-1.jpg" alt="Вид на город">
+        </li>
+        <li>
+          <h3>Небольшая площадь</h3>
+          <p>Все достопримечательности находятся очень близко</p>
+        </li>
+        <li>
+          <h3>Красивая дорога</h3>
+          <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+        </li>
+        <li>
+          <h3>Мало туристов</h3>
+          <p>Большинство едет в Гранд Каньон и толпится там</p>
+        </li>
+        <li>
+          <img src="/pics/photo-2.jpg" alt="Вид на мост дьявола">
+          <h3>Там есть мост дьявола</h3>
+          <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="come-to-sedona">
+      <h2>Приезжайте в Седону отдохнуть в комфорте и уюте</h2>
+      <p>Опытный персонал и качественное обслуживание!</p>
+      <ul class="offers">
+        <li>
+          <img src="pics/Advantage-icon.png" alt="Иконка дома">
+          <h3>Жильё</h3>
+          <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+        </li>
+        <li>
+          <img src="pics/Advantage-icon (1).png" alt="Иконка бургера">
+          <h3>Еда</h3>
+          <p>Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+        </li>
+        <li>
+          <img src="pics/Advantage-icon (2).png" alt="Иконка подарка">
+          <h3>Сувениры</h3>
+          <p>Не только китайского, но и настоящего местного производства!</p>
+        </li>
+      </ul>
+      <h2>Заинтересовались?</h2>
+      <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+      <button type="button">Поиск гостиницы в Седоне</button>
+    </section>
+
+    <section class="subscription">
+      
+      <h2>Подпишитесь на рассылку</h2>
+      <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
+      <form>
+        <input type="email" name="email" placeholder="Ваш e-mail" required>
+        <button type="submit">Подписаться</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <ul class="socials">
+      <li><a href="#"><img src="pics/Social.png" alt="Логотип ВКонтакте"></a></li>
+      <li><a href="#"><img src="pics/Vector.png" alt="Логотип Телеграм"></a></li>
+      <li><a href="#"><img src="pics/Vector (2).svg" alt="Логотип YouTube"></a></li>
+    </ul>
+    <a href="tel:+78128121212">+7 (812) 812-12-12</a>
+    <a href="#">
+      <img src="pics/logo_htmlacademy.png" alt="Логотип HTML-академии">
+    </a>
+  </footer>
+</body>
 </html>
