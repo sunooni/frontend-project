@@ -68,19 +68,19 @@
           <input type="number" id="end-number" min="1" max="10000" value="0" />
           <label for="end-price">до</label>
           <input type="range" min="0" max="10000" step="1" />
-          <button type="submit">Применить</button>
-          <button type="reset">Сбросить</button>
+          <button class="apply-button" type="submit">Применить</button>
+          <button class="reset-button" type="reset">Сбросить</button>
         </form>
       </section>
 
-      <section class="filtered-hotels">
-        <h2>Найдено гостиниц: <span class="count">38</span></h2>
-        <select>
-          <option value="cheap">Сначала дешевые</option>
-          <option value="expensive">Сначала дорогие</option>
+      <section class="filtered-hotels-section">
+        <h2 class="founded-hotels">Найдено гостиниц: <span class="count">38</span></h2>
+        <select class="price-select">
+          <option class="cheap" value="cheap">Сначала дешевые</option>
+          <option class="expensive" value="expensive">Сначала дорогие</option>
         </select>
         <ul class="cards">
-          <li>
+          <li class="cards-item">
             <article class="hotel-card">
               <img class="hotel-pic" src="pics/hotel-1.jpg" alt="Вид на звездное небо" />
               <h3 class="hotel-name" >Amara Resort & Spa</h3>
@@ -91,7 +91,7 @@
               <span class="rating">Рейтинг: 8,5</span>
             </article>
           </li>
-          <li>
+          <li class="cards-item">
             <article class="hotel-card">
               <img class="hotel-pic" src="pics/hotel-2.jpg" alt="Вид на горы" />
               <h3 class="hotel-name">Villas at Poco Diablo</h3>
@@ -102,7 +102,7 @@
               <span class="rating">Рейтинг: 9,2</span>
             </article>
           </li>
-          <li>
+          <li class="cards-item">
             <article class="hotel-card">
               <img class="hotel-pic" src="pics/hotel-3.jpg" alt="Вид на гору днем" />
               <h3 class="hotel-name">Desert Quail Inn</h3>
@@ -113,7 +113,7 @@
               <span class="rating">Рейтинг: 6,9</span>
             </article>
           </li>
-          <li>
+          <li class="cards-item">
             <article class="hotel-card">
               <img class="hotel-pic" src="pics/hotel-4.jpg" alt="Вид на гору на закате" />
               <h3 class="hotel-name">GreenTree Inn</h3>
@@ -139,23 +139,15 @@
     </main>
 
     <footer>
-      <ul class="socials">
-        <li>
-          <a href="#"><img src="pics/Social.png" alt="Логотип ВКонтакте" /></a>
-        </li>
-        <li>
-          <a href="#"><img src="pics/Vector.png" alt="Логотип Телеграм" /></a>
-        </li>
-        <li>
-          <a href="#"
-            ><img src="pics/Vector (2).svg" alt="Логотип YouTube"
-          /></a>
-        </li>
-      </ul>
-      <a href="tel:+78128121212">+7 (812) 812-12-12</a>
-      <a href="#">
-        <img src="pics/logo_htmlacademy.png" alt="Логотип HTML-академии" />
-      </a>
-    </footer>
+    <ul class="socials">
+      <li class="socials-item"><a href="#"><img src="pics/vk-icon.svg" alt="Логотип ВКонтакте"></a></li>
+      <li class="socials-item"><a href="#"><img src="pics/telegram-icon.svg" alt="Логотип Телеграм"></a></li>
+      <li class="socials-item"><a href="#"><img src="pics/youtube-icon.svg" alt="Логотип YouTube"></a></li>
+    </ul>
+    <a class="phone-number" href="tel:+78128121212">+7 (812) 812-12-12</a>
+    <a href="#">
+      <img class="htmlacademy-logo" src="pics/logo-htmlacademy.png" alt="Логотип HTML-академии">
+    </a>
+  </footer>
   </body>
 </html>
