@@ -6,20 +6,20 @@
   </head>
   <body>
     <main>
-      <h1>Поиск гостиницы в Седоне</h1>
-      <form>
-        <ul>
-          <li>
+      <h1 class="search-for-a-hotel">Поиск гостиницы в Седоне</h1>
+      <form class="search-form">
+        <ul class="search-list">
+          <li class="search-list-item">
             <label for="arrival-date">Дата Заезда: </label>
             <input type="date" id="arrival-date" name="arrival-date" />
           </li>
 
-          <li>
+          <li class="search-list-item">
             <label for="departure-date">Дата Выезда: </label>
             <input type="date" id="departure-date" name="departure-date" />
           </li>
 
-          <li>
+          <li class="search-list-item">
             <label for="adults">Взрослые: </label>
             <input
               type="number"
@@ -32,7 +32,7 @@
             />
           </li>
 
-          <li>
+          <li class="search-list-item">
             <label for="children">Дети: </label>
             <input
               type="number"
@@ -43,7 +43,7 @@
               value="2"
               step="1"
             />
-          </li>
+          <li class="search-list-item">
           <li><button type="submit">Найти</button></li>
         </ul>
       </form>
