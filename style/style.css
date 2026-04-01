@@ -24,7 +24,14 @@ body {
 }
 
 .visually-hidden {
-  visibility: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip-path: inset(100%);
+  overflow: hidden;
 }
 
 .title {
@@ -80,35 +87,35 @@ body {
 
 .button-size-s {
   width: 160px;
-  height: 36px;
+  min-height: 36px;
   font-size: 16px;
   line-height: 20px;
 }
 
 .button-size-m {
   width: 232px;
-  height: 52px;
+  min-height: 52px;
   font-size: 20px;
   line-height: 36px;
 }
 
 .button-size-l {
   width: 376px;
-  height: 52px;
+  min-height: 52px;
   font-size: 20px;
   line-height: 36px;
 }
 
 .button-size-xs {
   width: 140px;
-  height: 36px;
+  min-height: 36px;
   font-size: 16px;
   line-height: 20px;
 }
 
 .button-size-full {
   width: 191px;
-  height: 36px;
+  min-height: 36px;
   font-size: 16px;
   line-height: 20px;
 }
@@ -222,7 +229,7 @@ body {
 
 .price-select {
   width: 292px;
-  height: 49px;
+  min-height: 49px;
   border-radius: 4px;
 }
 
@@ -247,7 +254,7 @@ body {
   color: #333333;
   text-transform: uppercase;
   width: 140px;
-  height: 36px;
+  min-height: 36px;
   border-radius: 4px;
   display: inline-block;
   text-align: center;
