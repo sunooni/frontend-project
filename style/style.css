@@ -1,0 +1,266 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 22px;
+  line-height: 26px;
+  background-color: white;
+  margin: 0;
+  color: #333333;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip-path: inset(100%);
+  overflow: hidden;
+}
+
+.title {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.title-color-white {
+  color: #ffffff;
+}
+
+.title-color-black {
+  color: #000000;
+}
+
+.title-size-xl {
+  font-size: 60px;
+  line-height: 78px;
+}
+
+.title-size-l {
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.title-size-m {
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.text {
+  font-weight: 400;
+  color: #000000;
+}
+
+.text-size-l {
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.text-size-m {
+  font-size: 21px;
+  line-height: 18px;
+}
+
+.button {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 4px;
+  border: none;
+}
+
+.button-size-s {
+  width: 160px;
+  min-height: 36px;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.button-size-m {
+  width: 232px;
+  min-height: 52px;
+  font-size: 20px;
+  line-height: 36px;
+}
+
+.button-size-l {
+  width: 376px;
+  min-height: 52px;
+  font-size: 20px;
+  line-height: 36px;
+}
+
+.button-size-xs {
+  width: 140px;
+  min-height: 36px;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.button-size-full {
+  width: 191px;
+  min-height: 36px;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.button-color-primary {
+  background-color: #756157;
+  color: #ffffff;
+}
+
+.button-color-secondary {
+  background-color: #82b3d3;
+  color: #ffffff;
+}
+
+.button-color-transparent {
+  background-color: transparent;
+  color: #ffffff;
+}
+
+.input {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+}
+
+.input-size-l {
+  font-size: 24px;
+  line-height: 18px;
+  color: #000000;
+}
+
+.input-size-m {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.input-size-s {
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.welcome-to-sedona {
+  background-image: url("../pics/welcome-to-sedona-background.jpg");
+}
+
+.user-navigation-item {
+  font-weight: 700;
+  color: #000000;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.phone-number {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.advantages-item:first-child,
+.advantages-item:last-child {
+  background-color: #82B3D3;
+}
+
+.advantages-item:nth-child(2),
+.advantages-item:nth-child(4) {
+  background-color: #83B3D31F;
+}
+
+.advantages-item:nth-child(3),
+.recommendations-item:first-child,
+.recommendations-item:last-child {
+  background-color: #83B3D333;
+}
+
+.subscription-section {
+  background-image: url("../pics/subscription-background.jpg");
+}
+
+.filter-section {
+  background-image: url("../pics/filter-catalog-background.jpg");
+}
+
+.filter-group-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: white;
+}
+
+.filter-item input,
+.filter-item label {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  color: white;
+}
+
+.filter-item .input {
+  margin-right: 12px;
+}
+
+.founded-hotels {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.price-select {
+  width: 292px;
+  min-height: 49px;
+  border-radius: 4px;
+}
+
+.hotel-card {
+  border: 1px;
+  border-radius: 4px;
+}
+
+.hotel-type,
+.hotel-price {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.rating {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  background-color: #F2F2F2;
+  color: #333333;
+  text-transform: uppercase;
+  width: 140px;
+  min-height: 36px;
+  border-radius: 4px;
+  display: inline-block;
+  text-align: center;
+  line-height: 36px;
+}
+
+ul {
+  list-style: none;
+}
