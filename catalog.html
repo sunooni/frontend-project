@@ -43,9 +43,11 @@
 
     <main>
       <section class="filter-section">
-        <h1 class="title title-size-xl title-color-white">Гостиницы Седоны</h1>
-        <p class="text text-size-m title-color-white">Гостиницы</p>
+
+        <h1 class="hotels-sedona title title-size-xl title-color-white">Гостиницы Седоны</h1>
+        <p class="hotels text text-size-m title-color-white">Гостиницы</p>
         <form class="filter-form">
+          <span class="filter-group">
           <h3 class="filter-group-title">Инфраструктура:</h3>
           <ul class="filter-items-list">
             <li class="filter-item">
@@ -76,7 +78,8 @@
               <label for="wi-fi">wi-fi</label>
             </li>
           </ul>
-
+</span>
+<span class="filter-group">
           <h3 class="filter-group-title">Тип Жилья:</h3>
           <ul class="filter-items-list">
             <li class="filter-item">
@@ -107,7 +110,8 @@
               <label for="apartment">Апартаменты</label>
             </li>
           </ul>
-
+</span>
+<span class="filter-group">
           <h3 class="filter-group-title">Стоимость, Р:</h3>
           <input
             class="input input-size-m"
@@ -133,7 +137,8 @@
             min="0"
             max="10000"
             step="1"
-          />
+          /></span>
+          <span class="filter-group">
           <button
             class="button button-size-full button-color-secondary"
             type="submit"
@@ -148,15 +153,17 @@
           </button>
         </form>
       </section>
+      </span>
 
       <section class="filtered-hotels-section">
-        <h2 class="founded-hotels">
+        <span class="select-founded-hotels"><h2 class="founded-hotels">
           Найдено гостиниц: <span class="count">38</span>
         </h2>
         <select class="price-select input input-size-m">
           <option class="cheap" value="cheap">Сначала дешевые</option>
           <option class="expensive" value="expensive">Сначала дорогие</option>
         </select>
+        </span>
         <ul class="cards">
           <li class="cards-item">
             <article class="hotel-card">
@@ -166,14 +173,17 @@
                 alt="Вид на звездное небо"
               />
               <h3 class="hotel-name">Amara Resort & Spa</h3>
-              <p class="hotel-type">Гостиница</p>
+              <span class="price-row"><p class="hotel-type">Гостиница</p>
               <p class="hotel-price">От 4000 Р</p>
+              </span>
+              <span class="button-row">
               <button class="button button-size-xs button-color-primary">
                 Подробнее
               </button>
               <button class="button button-size-xs button-color-secondary">
                 В избранное
               </button>
+              </span>
               <span class="rating">Рейтинг: 8,5</span>
             </article>
           </li>
@@ -181,14 +191,18 @@
             <article class="hotel-card">
               <img class="hotel-pic" src="pics/hotel-2.jpg" alt="Вид на горы" />
               <h3 class="hotel-name">Villas at Poco Diablo</h3>
+              <span class="price-row">
               <p class="hotel-type">Гостиница</p>
               <p class="hotel-price">От 5000 Р</p>
+              </span>
+              <span class="button-row">
               <button class="button button-size-xs button-color-primary">
                 Подробнее
               </button>
               <button class="button button-size-xs button-color-secondary">
                 В избранном
               </button>
+              </span>
               <span class="rating">Рейтинг: 9,2</span>
             </article>
           </li>
@@ -200,14 +214,18 @@
                 alt="Вид на гору днем"
               />
               <h3 class="hotel-name">Desert Quail Inn</h3>
+              <span class="price-row">
               <p class="hotel-type">Гостиница</p>
               <p class="hotel-price">От 2500 Р</p>
+              </span>
+              <span class="button-row">
               <button class="button button-size-xs button-color-primary">
                 Подробнее
               </button>
               <button class="button button-size-xs button-color-secondary">
                 В избранное
               </button>
+              </span>
               <span class="rating">Рейтинг: 6,9</span>
             </article>
           </li>
@@ -219,14 +237,18 @@
                 alt="Вид на гору на закате"
               />
               <h3 class="hotel-name">GreenTree Inn</h3>
+              <span class="price-row">
               <p class="hotel-type">Гостиница</p>
               <p class="hotel-price">От 1500 Р</p>
+              </span>
+              <span class="button-row">
               <button class="button button-size-xs button-color-primary">
                 Подробнее
               </button>
               <button class="button button-size-xs button-color-secondary">
                 В избранное
               </button>
+              </span>
               <span class="rating">Рейтинг: 5,0</span>
             </article>
           </li>

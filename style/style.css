@@ -21,6 +21,52 @@ body {
   background-color: white;
   margin: 0;
   color: #333333;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  padding: 0 70px;
+}
+
+main {
+  text-align: center;
+}
+
+.navigation {
+  display: flex;
+  margin-left: 30px;
+  gap: 32px;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.user-navigation {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  gap: 20px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 120px;
+}
+
+.socials {
+  display: flex;
+  gap: 13px;
+}
+
+.htmlacademy-logo {
+  margin-right: 70px;
 }
 
 .visually-hidden {
@@ -104,6 +150,8 @@ body {
   min-height: 52px;
   font-size: 20px;
   line-height: 36px;
+  margin-top: 54px;
+  margin-bottom: 96px;
 }
 
 .button-size-xs {
@@ -144,6 +192,9 @@ body {
   font-size: 24px;
   line-height: 18px;
   color: #000000;
+  width: 452px;
+  min-height: 48px;
+  border-radius: 4px;
 }
 
 .input-size-m {
@@ -157,7 +208,14 @@ body {
 }
 
 .welcome-to-sedona {
+  display: flex;
   background-image: url("../pics/welcome-to-sedona-background.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  width: 100%;
+  height: 485px;
+  margin-bottom: 69px;
 }
 
 .user-navigation-item {
@@ -175,9 +233,43 @@ body {
   text-decoration: none;
 }
 
+.list-of-advantages {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.advantages-section {
+  display: flex;
+  width: 100%;
+  margin-top: 90px;
+}
+
 .advantages-item:first-child,
 .advantages-item:last-child {
   background-color: #82B3D3;
+  display: flex;
+  width: 100%;
+}
+
+.advantages-item:first-child .advantage-text,
+.advantages-item:last-child .advantage-text {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.advantages-item:first-child .town-scenery,
+.advantages-item:last-child .devil-bridge-pic {
+  flex: 2;
+  width: auto;
+  height: auto;
+  display: block;
 }
 
 .advantages-item:nth-child(2),
@@ -185,7 +277,53 @@ body {
   background-color: #83B3D31F;
 }
 
-.advantages-item:nth-child(3),
+.advantages-item:nth-child(3) {
+  background-color: #83B3D333;
+}
+
+.advantages-item:not(:first-child):not(:last-child) {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  aspect-ratio: 1 / 1;
+}
+
+.advantages-item:first-child .advantage-text .title,
+.advantages-item:first-child .advantage-text .text,
+.advantages-item:last-child .advantage-text .title,
+.advantages-item:last-child .advantage-text .text {
+  color: #ffffff;
+}
+
+.come-to-sedona-section {
+  margin-top: 64px;
+}
+
+.recommendations-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.recommendations-item {
+  margin-top: 64px;
+  margin-bottom: 96px;
+  flex: 1;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+}
+
 .recommendations-item:first-child,
 .recommendations-item:last-child {
   background-color: #83B3D333;
@@ -193,10 +331,93 @@ body {
 
 .subscription-section {
   background-image: url("../pics/subscription-background.jpg");
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  width: 100%;
+  height: 415px;
+}
+
+.subscription-section .text {
+  color: #ffffff;
+}
+
+.subscribe-form {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.subscribe-form .input-size-l {
+  border-radius: 4px 0 0 4px;
+  margin: 0;
+  border: none;
+}
+
+.subscribe-form .button-size-m {
+  border-radius: 0 4px 4px 0;
+  margin: 0;
 }
 
 .filter-section {
   background-image: url("../pics/filter-catalog-background.jpg");
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  width: 100%;
+  min-height: 412px;
+  padding: 35px 70px 0 70px;
+  box-sizing: border-box;
+}
+
+.hotels-sedona {
+  margin: 0 0 8px 0;
+}
+
+.hotels {
+  margin: 0 0 40px 0;
+}
+
+.filter-form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.filter-group:first-child {
+  margin-right: 70px;
+}
+
+.filter-group:nth-child(2) {
+  margin-right: 140px;
+}
+
+.filter-group:nth-child(3) {
+  margin-right: 70px;
+  flex-direction: column;
+}
+
+.filter-group:last-child {
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+}
+
+.filter-items-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
 }
 
 .filter-group-title {
@@ -219,8 +440,15 @@ body {
   margin-right: 12px;
 }
 
+.select-founded-hotels {
+  display: flex;
+  padding-top: 30px;
+  padding-left: 70px;
+  gap: 200px;
+  align-items: center;
+}
+
 .founded-hotels {
-  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -228,26 +456,54 @@ body {
 }
 
 .price-select {
-  width: 292px;
-  min-height: 49px;
+  min-width: 292px;
+  height: 49px;
   border-radius: 4px;
 }
 
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  list-style: none;
+  padding: 0 70px;
+  margin: 0;
+}
+
 .hotel-card {
-  border: 1px;
+  border: 1px solid #e6e6e6;
   border-radius: 4px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 340px;
+  height: 438px;
+  text-align: left;
+  gap: 16px;
+}
+
+.hotel-card h3,
+.hotel-card p,
+.hotel-card .price-row,
+.hotel-card .rating {
+  margin: 0;
+}
+
+.price-row,
+.button-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .hotel-type,
 .hotel-price {
-  font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
 }
 
 .rating {
-  font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 16px;
   background-color: #F2F2F2;
@@ -259,6 +515,7 @@ body {
   display: inline-block;
   text-align: center;
   line-height: 36px;
+  margin-left: auto;
 }
 
 ul {
