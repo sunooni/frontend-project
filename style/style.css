@@ -34,7 +34,7 @@ body {
   width: 1200px;
   margin: 0 auto;
   background-color: #ffffff;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 15px #00000033;;
 }
 
 .visually-hidden {
@@ -624,7 +624,22 @@ header {
 
 .layouts {
   display: flex;
-  gap: 48px;
+  gap: 8px;
+}
+
+.layout-button {
+  display: flex;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  min-height: 48px;
+  background-color: #ffffff;
+}
+
+.layout-button:hover {
+  border: 2px solid #000000;
 }
 
 .cards {
@@ -688,7 +703,71 @@ header {
   display: inline-block;
   text-align: center;
   line-height: 36px;
-  margin-left: auto;
+}
+
+.rating-with-stars {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.rating-with-stars .stars {
+  display: flex;
+  gap: 6px;
+  list-style: none;
+}
+
+.rating-with-stars .star-item {
+  display: flex;
+  align-items: center;
+}
+
+.divider-line {
+  display: block;
+  width: 1060px;
+  height: 0;
+  margin: 40px auto 0;
+  border-top: 1px solid #E5E5E5;
+}
+
+.pagination-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 70px;
+}
+
+.pagination-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  min-height: 60px;
+  background-color: #82B3D3;
+  border-radius: 4px;
+}
+
+.pagination-item .pagination-a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.pagination-item:nth-child(5) {
+  background-color: transparent;
+}
+
+.pagination-item:nth-child(5) .pagination-a {
+  color: #000000;
 }
 
 .subscription-section {
