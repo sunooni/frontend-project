@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="/style/style.css" />
   </head>
   <body>
+    <div class="container">
     <header>
       <nav class="main-nav">
         <a href="index.html">
@@ -16,9 +17,9 @@
           />
         </a>
         <ul class="navigation">
-          <li class="navigation-item"><a href="index.html">Главная</a></li>
-          <li class="navigation-item"><a href="#">О Седоне</a></li>
-          <li class="navigation-item"><a href="catalog.html">Гостиницы</a></li>
+          <li class="navigation-item"><a class="nav" href="index.html">Главная</a></li>
+          <li class="navigation-item"><a class="nav" href="#">О Седоне</a></li>
+          <li class="navigation-item"><a class="nav" href="catalog.html">Гостиницы</a></li>
         </ul>
         <ul class="user-navigation">
           <li class="user-navigation-item">
@@ -61,7 +62,7 @@
                 id="pool"
                 name="pool"
               />
-              <label for="pool">Бассейн</label>
+              <label class="label" for="pool">Бассейн</label>
             </li>
             <li class="filter-item">
               <input
@@ -70,7 +71,7 @@
                 id="parking"
                 name="parking"
               />
-              <label for="parking">Парковка</label>
+              <label class="label" for="parking">Парковка</label>
             </li>
             <li class="filter-item">
               <input
@@ -79,7 +80,7 @@
                 id="wi-fi"
                 name="wi-fi"
               />
-              <label for="wi-fi">wi-fi</label>
+              <label class="label" for="wi-fi">wi-fi</label>
             </li>
           </ul>
 </span>
@@ -93,7 +94,7 @@
                 id="hotel"
                 name="type-of-living"
               />
-              <label for="hotel">Гостиница</label>
+              <label class="label" for="hotel">Гостиница</label>
             </li>
             <li class="filter-item">
               <input
@@ -102,7 +103,7 @@
                 id="motel"
                 name="type-of-living"
               />
-              <label for="motel">Мотель</label>
+              <label class="label" for="motel">Мотель</label>
             </li>
             <li class="filter-item">
               <input
@@ -111,7 +112,7 @@
                 id="apartment"
                 name="type-of-living"
               />
-              <label for="apartment">Апартаменты</label>
+              <label class="label" for="apartment">Апартаменты</label>
             </li>
           </ul>
 </span>
@@ -283,15 +284,15 @@
     <footer>
       <ul class="socials">
         <li class="socials-item">
-          <a href="#"><img src="pics/vk-icon.svg" alt="Логотип ВКонтакте" /></a>
+          <a class="social" href="#"><img src="pics/vk-icon.svg" alt="Логотип ВКонтакте" /></a>
         </li>
         <li class="socials-item">
-          <a href="#"
+          <a class="social" href="#"
             ><img src="pics/telegram-icon.svg" alt="Логотип Телеграм"
           /></a>
         </li>
         <li class="socials-item">
-          <a href="#"
+          <a class="social" href="#"
             ><img src="pics/youtube-icon.svg" alt="Логотип YouTube"
           /></a>
         </li>
@@ -305,5 +306,6 @@
         />
       </a>
     </footer>
+    </div>
   </body>
 </html>

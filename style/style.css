@@ -30,6 +30,13 @@ body {
   flex-direction: column;
 }
 
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -200,9 +207,8 @@ header {
 .main-nav {
   display: flex;
   align-items: center;
-  width: 1200px;
+  width: 100%;
   padding: 0 70px;
-  margin: 0 auto;
   position: relative;
 }
 
@@ -216,13 +222,13 @@ header {
   gap: 32px;
   list-style: none;
 }
-.navigation-item a {
+.navigation-item .nav {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   color: #000000;
 }
-.navigation-item a:hover {
+.navigation-item .nav:hover {
   border-bottom: 2px solid #756157;
   padding-bottom: 20px;
   color: #756257;
@@ -235,7 +241,7 @@ header {
   gap: 20px;
   list-style: none;
 }
-.user-navigation-item a {
+.user-navigation-item .user-nav {
   display: flex;
   align-items: center;
 }
@@ -295,8 +301,8 @@ header {
 .list-of-advantages {
   display: flex;
   flex-wrap: wrap;
-  width: 1200px;
-  margin: 0 auto;
+  width: 100%;
+  margin: 0;
   list-style: none;
 }
 
@@ -385,7 +391,7 @@ header {
 
 .come-to-sedona-section {
   width: 100%;
-  background-color: #ffffff;
+  background-color: white;
   text-align: center;
   padding: 64px 0 0;
 }
@@ -403,8 +409,8 @@ header {
 
 .recommendations-list {
   display: flex;
-  width: 1200px;
-  margin: 0 auto;
+  width: 100%;
+  margin: 0;
   list-style: none;
 }
 .recommendations-item {
@@ -422,7 +428,9 @@ header {
 .recommendations-item:last-child {
   background-color: rgba(131, 179, 211, 0.12);
 }
-.recommendations-item img {
+.recommendations-item .icon-house,
+.recommendations-item .icon-burger,
+.recommendations-item .icon-gift {
   margin-bottom: 20px;
 }
 .recommendations-item .title {
@@ -447,8 +455,8 @@ header {
 }
 
 .hotels-sedona {
-  width: 1200px;
-  margin: 0 auto 8px;
+  width: 100%;
+  margin: 0 0 8px 0;
   text-transform: none;
 }
 
@@ -456,8 +464,8 @@ header {
   display: flex;
   align-items: center;
   gap: 10px;
-  width: 1200px;
-  margin: 0 auto 40px;
+  width: 100%;
+  margin: 0 0 40px 0;
 }
 .house-icon,
 .arrow-icon {
@@ -479,8 +487,8 @@ header {
 }
 
 .filter-form {
-  width: 1200px;
-  margin: 0 auto;
+  width: 100%;
+  margin: 0;
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
@@ -504,9 +512,7 @@ header {
   width: 288px;
 }
 .filter-group:nth-child(4) {
-  margin-right: 140px;
   margin-top: 65px;
-  flex-wrap: wrap;
   gap: 10px;
 }
 
@@ -554,10 +560,10 @@ header {
 .filter-item:last-child {
   margin-bottom: 0;
 }
-.filter-item input {
+.filter-item .input {
   margin-right: 12px;
 }
-.filter-item label {
+.filter-item .label {
   font-weight: 400;
   font-size: 18px;
   line-height: 23px;
@@ -590,8 +596,8 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 1200px;
-  margin: 0 auto;
+  width: 100%;
+  margin: 0;
   padding: 30px 70px;
 }
 .founded-hotels {
@@ -610,6 +616,7 @@ header {
   border: 2px solid #e6e6e6;
   border-radius: 4px;
   background-color: white;
+  cursor: pointer;
 }
 .price-select:hover {
   border-color: #68a2ca;
@@ -624,14 +631,16 @@ header {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  width: 1200px;
-  margin: 0 auto;
+  width: 100%;
+  margin: 0;
   padding: 0 70px;
   list-style: none;
 }
+
 .cards-item {
-  width: calc((1200px - 140px - 40px) / 3);
+  width: 340px;
 }
+
 
 .hotel-card {
   border: 1px solid #e6e6e6;
@@ -640,6 +649,8 @@ header {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  height: 100%;
+  width: 100%;
 }
 .hotel-pic {
   width: 100%;
@@ -725,22 +736,26 @@ header {
 }
 
 footer {
+  width: 100%;
+  background-color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 40px 70px;
-  background-color: #ffffff;
 }
 
 .socials {
   display: flex;
   gap: 26px;
   list-style: none;
+  align-items: center;
+  padding: 0;
+  margin: 0;
 }
-.socials-item a:hover {
+.socials-item .social:hover {
   color: #68a2ca;
 }
-.socials-item a:active {
+.socials-item .social:active {
   color: #68a2ca4d;
 }
 
@@ -749,12 +764,6 @@ footer {
   font-size: 40px;
   line-height: 40px;
   color: #000000;
-}
-.phone-number:hover {
-  color: #756157;
-}
-.phone-number:active {
-  color: #7561574d;
 }
 
 .htmlacademy-logo {
