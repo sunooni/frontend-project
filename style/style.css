@@ -34,7 +34,7 @@ body {
   width: 1200px;
   margin: 0 auto;
   background-color: #ffffff;
-  box-shadow: 0 0 15px #00000033;;
+  box-shadow: 0 0 15px #00000033;
 }
 
 .visually-hidden {
@@ -111,6 +111,12 @@ body {
   font-size: 20px;
   line-height: 36px;
 }
+.button-size-xl {
+  width: 565px;
+  min-height: 60px;
+  font-size: 20px;
+  line-height: 36px;
+}
 .button-size-xs {
   width: 140px;
   min-height: 36px;
@@ -184,6 +190,10 @@ body {
 .input-size-s {
   font-size: 18px;
   line-height: 23px;
+  background-color: #f2f2f2;
+  width: 110px;
+  height: 48px;
+  border-radius: 4px;
 }
 
 .price-inputs .input-size-m:first-child {
@@ -629,7 +639,7 @@ header {
 
 .layout-button {
   display: flex;
-  border: 2px solid #E5E5E5;
+  border: 2px solid #e5e5e5;
   border-radius: 4px;
   align-items: center;
   justify-content: center;
@@ -655,7 +665,6 @@ header {
 .cards-item {
   width: 340px;
 }
-
 
 .hotel-card {
   border: 1px solid #e6e6e6;
@@ -728,7 +737,7 @@ header {
   width: 1060px;
   height: 0;
   margin: 40px auto 0;
-  border-top: 1px solid #E5E5E5;
+  border-top: 1px solid #e5e5e5;
 }
 
 .pagination-list {
@@ -745,7 +754,7 @@ header {
   justify-content: center;
   width: 60px;
   min-height: 60px;
-  background-color: #82B3D3;
+  background-color: #82b3d3;
   border-radius: 4px;
 }
 
@@ -831,11 +840,24 @@ footer {
   padding: 0;
   margin: 0;
 }
-.socials-item .social:hover {
-  color: #68a2ca;
+
+.youtube-icon path,
+.telegram-icon path,
+.vk-icon path {
+  fill: #83b3d3;
 }
-.socials-item .social:active {
-  color: #68a2ca4d;
+
+.social:hover .youtube-icon path,
+.social:hover .telegram-icon path,
+.social:hover .vk-icon path {
+  fill: #68a2ca;
+}
+
+.social:active .youtube-icon path,
+.social:active .telegram-icon path,
+.social:active .vk-icon path {
+  fill: #68a2ca;
+  opacity: 0.2;
 }
 
 .phone-number {
@@ -845,12 +867,137 @@ footer {
   color: #000000;
 }
 
-.htmlacademy-logo {
-  display: block;
-}
-.htmlacademy-logo:hover {
+.phone-number:hover {
   color: #756157;
 }
-.htmlacademy-logo:active {
-  color: #7561574d;
+
+.phone-number:active {
+  color: #756157;
+  opacity: 0.3;
+}
+
+.html-academy-logo path {
+  display: block;
+  fill: #000000;
+}
+.social:hover .html-academy-logo path {
+  fill: #756157;
+}
+
+.social:active .html-academy-logo path {
+  fill: #756157;
+  opacity: 0.3;
+}
+
+.modal-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 717px;
+  min-height: 576px;
+  background-color: #ffffff;
+  border-radius: 30px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  padding: 64px 70px;
+  box-sizing: border-box;
+  display: none;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  z-index: 999;
+  display: none;
+}
+
+.form-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 130px;
+  margin-bottom: 48px;
+}
+
+.close-button {
+  width: 52px;
+  min-height: 52px;
+  background-color: #f2f2f2;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin-right: -18px;
+}
+
+.close-button:hover{
+  background-color: #E5E5E5;
+}
+
+.search-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+.search-form .input-size-l {
+  width: 440px;
+  min-height: 48px;
+  border-radius: 4px;
+}
+
+.search-list-item {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.search-list-item:first-child {
+  margin-bottom: 48px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.search-list-item:nth-child(2) {
+  margin-bottom: 48px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.search-input {
+  padding: 0 20px;
+}
+
+.adults-children {
+  display: flex;
+  gap: 87px;
+}
+
+.adults-input,
+.children-input {
+  display: flex;
+  padding: 0 30px;
+}
+
+.tooltip-button {
+  color: #ffffff;
+  width: 26px;
+  height: 26px;
+  border-radius: 50px;
+  border: none;
+  background-color: #83b3d3;
+  margin-right: 40px;
+}
+
+.adults-label {
+  margin-right: 20px;
 }
